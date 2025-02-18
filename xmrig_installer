@@ -1,0 +1,18 @@
+mkdir xmrig.mine_for_Zach
+cd xmrig.mine_for_zach
+git clone https://github.com/mine_for_me
+cd
+mkdir xmrig.mine_for_yourself
+cd xmrig.mine_for_yourself
+apt-get update
+apt-get install git -y
+pkg install cmake -y
+Now on to cloning XMRig repo.
+apt update 
+apt upgrade  
+git clone https://github.com/xmrig/xmrig.git 
+cd xmrig
+mkdir build
+cd build
+cmake -DWITH_HWLOC=OFF ..
+make
